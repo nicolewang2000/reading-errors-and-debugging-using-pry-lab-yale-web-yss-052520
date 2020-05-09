@@ -1,7 +1,7 @@
 # don't forget to add: require 'pry'
 
 def get_user_input
-  gets.chomp
+  gets.chomp_to
 end
 
 def prompt_user
@@ -20,6 +20,5 @@ end
 
 def runner
   prompt_user
-  num = get_user_input
-  selection(num)
+  selection(get_user_input)
 end
